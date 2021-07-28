@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.json());
 
 app.post('/check', (req, res) => {
-	return res.status(200).send({ active: false });
+	return res.status(200).send({ active: true });
 });
 
 const PORT = process.env.PORT || 3000;
